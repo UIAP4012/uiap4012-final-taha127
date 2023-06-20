@@ -7,7 +7,10 @@
 #include <QtMultimediaWidgets/QVideoWidget>
 #include <QApplication>
 #include <QtGui/QWindow>
-#include <qdesktopwidget.h>
+#include <QVideoWidget>
+#include <QDesktopWidget>
+#include <QScreen>
+#include <QTimer>
 
 namespace Ui {
 class loadapp;
@@ -20,7 +23,8 @@ class loadapp : public QDialog
 public:
     explicit loadapp(QWidget *parent = nullptr);
     ~loadapp();
-
+public slots:
+    void onTimeout();
 private:
     Ui::loadapp *ui;
 };

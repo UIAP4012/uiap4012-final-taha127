@@ -25,11 +25,13 @@ public:
     {
         if (loadapp->objectName().isEmpty())
             loadapp->setObjectName(QString::fromUtf8("loadapp"));
-        loadapp->resize(442, 354);
+        loadapp->resize(566, 369);
         label = new QLabel(loadapp);
         label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(40, 100, 371, 221));
+        label->setGeometry(QRect(0, 0, 571, 371));
+        label->setCursor(QCursor(Qt::WaitCursor));
         label->setAutoFillBackground(false);
+        label->setStyleSheet(QString::fromUtf8("background-image: url(:/resources/movie/first.gif);"));
 
         retranslateUi(loadapp);
 
