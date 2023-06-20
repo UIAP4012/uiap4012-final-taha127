@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>movie/Capture.JPG</file>
+        <file>movie/loading.mp4</file>
+    </qresource>
+</RCC>
