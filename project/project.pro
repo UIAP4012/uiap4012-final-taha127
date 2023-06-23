@@ -20,15 +20,18 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     loadapp.cpp \
+    login_singup.cpp \
     main.cpp \
     mainwindow.cpp
 
 HEADERS += \
     loadapp.h \
+    login_singup.h \
     mainwindow.h
 
 FORMS += \
     loadapp.ui \
+    login_singup.ui \
     mainwindow.ui
 
 # Default rules for deployment.

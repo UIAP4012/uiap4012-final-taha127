@@ -2,5 +2,6 @@
     <qresource prefix="/resources">
         <file>movie/Capture.JPG</file>
         <file>movie/first.gif</file>
+        <file>image/closewindow_hover.png</file>
     </qresource>
 </RCC>

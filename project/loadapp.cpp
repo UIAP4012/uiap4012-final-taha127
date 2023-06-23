@@ -1,6 +1,6 @@
 #include "loadapp.h"
 #include "ui_loadapp.h"
-#include "mainwindow.h"
+#include "login_singup.h"
 
 loadapp::loadapp(QWidget *parent) :
     QDialog(parent),
@@ -20,7 +20,7 @@ loadapp::~loadapp()
 }
 void loadapp::onTimeout(){
     close();
-    MainWindow * next = new MainWindow();
+    login_singup * next = new login_singup();
     next->show();
 }
 
