@@ -21,6 +21,8 @@ public:
 private slots:
     void on_exit_triggered();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::login_singup *ui;
 };

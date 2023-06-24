@@ -1,5 +1,6 @@
 #include "login_singup.h"
 #include "ui_login_singup.h"
+#include "signup.h"
 
 login_singup::login_singup(QWidget *parent) :
     QMainWindow(parent),
@@ -36,4 +37,11 @@ login_singup::~login_singup()
 void login_singup::on_exit_triggered()
 {
     close();
+}
+
+void login_singup::on_pushButton_clicked()
+{
+    close();
+    signup * next = new signup();
+    next->show();
 }

@@ -4,5 +4,7 @@
         <file>movie/first.gif</file>
         <file>image/closewindow_hover.png</file>
         <file>image/eye.jpeg</file>
+        <file>image/back_click.png</file>
+        <file>image/2b05.png</file>
     </qresource>
 </RCC>

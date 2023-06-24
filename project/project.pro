@@ -22,17 +22,20 @@ SOURCES += \
     loadapp.cpp \
     login_singup.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    signup.cpp
 
 HEADERS += \
     loadapp.h \
     login_singup.h \
-    mainwindow.h
+    mainwindow.h \
+    signup.h
 
 FORMS += \
     loadapp.ui \
     login_singup.ui \
-    mainwindow.ui
+    mainwindow.ui \
+    signup.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
