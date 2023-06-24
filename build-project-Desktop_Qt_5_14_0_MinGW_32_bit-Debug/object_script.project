@@ -1,0 +1,10 @@
+loadapp.o
+login_singup.o
+main.o
+mainwindow.o
+signup.o
+qrc_resources.o
+moc_loadapp.o
+moc_login_singup.o
+moc_mainwindow.o
+moc_signup.o
