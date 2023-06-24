@@ -48,7 +48,7 @@ public:
     QRadioButton *radioButton;
     QRadioButton *radioButton_2;
     QPushButton *pushButton_2;
-    QWidget *widget;
+    QWidget *layoutWidget2;
     QHBoxLayout *horizontalLayout_4;
     QLabel *label_3;
     QPushButton *pushButton;
@@ -133,6 +133,7 @@ public:
         lineEdit_2->setStyleSheet(QString::fromUtf8("font: 11pt \"Microsoft Sans Serif\";\n"
 "background-color: rgb(170, 0, 255);\n"
 "border-radius: 8px;"));
+        lineEdit_2->setEchoMode(QLineEdit::Password);
 
         horizontalLayout_2->addWidget(lineEdit_2);
 
@@ -169,14 +170,14 @@ public:
         pushButton_2->setAcceptDrops(true);
         pushButton_2->setStyleSheet(QString::fromUtf8("font: 75 12pt \"Segoe Print\";\n"
 "color: rgb(85, 255, 0);"));
-        widget = new QWidget(frame);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(40, 280, 231, 41));
-        horizontalLayout_4 = new QHBoxLayout(widget);
+        layoutWidget2 = new QWidget(frame);
+        layoutWidget2->setObjectName(QString::fromUtf8("layoutWidget2"));
+        layoutWidget2->setGeometry(QRect(40, 280, 231, 41));
+        horizontalLayout_4 = new QHBoxLayout(layoutWidget2);
         horizontalLayout_4->setSpacing(0);
         horizontalLayout_4->setObjectName(QString::fromUtf8("horizontalLayout_4"));
         horizontalLayout_4->setContentsMargins(9, 9, 19, 4);
-        label_3 = new QLabel(widget);
+        label_3 = new QLabel(layoutWidget2);
         label_3->setObjectName(QString::fromUtf8("label_3"));
         label_3->setStyleSheet(QString::fromUtf8("\n"
 "font: 57 10pt \"Mission Gothic Bold Italic\";\n"
@@ -184,7 +185,7 @@ public:
 
         horizontalLayout_4->addWidget(label_3);
 
-        pushButton = new QPushButton(widget);
+        pushButton = new QPushButton(layoutWidget2);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
         pushButton->setCursor(QCursor(Qt::PointingHandCursor));
         pushButton->setStyleSheet(QString::fromUtf8("border-radius:8px;\n"

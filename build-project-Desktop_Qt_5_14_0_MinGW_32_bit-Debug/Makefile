@@ -494,6 +494,7 @@ qrc_resources.cpp: ../project/resources.qrc \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/bin/rcc.exe \
 		../project/movie/first.gif \
 		../project/movie/Capture.JPG \
+		../project/image/eye.jpeg \
 		../project/image/closewindow_hover.png
 	D:\Qt\Qt5.14.0\5.14.0\mingw73_32\bin\rcc.exe -name resources ..\project\resources.qrc -o qrc_resources.cpp
 
@@ -1213,6 +1214,9 @@ login_singup.o: ../project/login_singup.cpp ../project/login_singup.h \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtGui/qicon.h \
 		ui_login_singup.h \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtCore/QVariant \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QAction \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/qaction.h \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/qactiongroup.h \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QApplication \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/qapplication.h \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtCore/qcoreapplication.h \
@@ -1240,10 +1244,15 @@ login_singup.o: ../project/login_singup.cpp ../project/login_singup.h \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QMenuBar \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/qmenubar.h \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/qmenu.h \
-		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/qaction.h \
-		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/qactiongroup.h \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QPushButton \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/qpushbutton.h \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/qabstractbutton.h \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QRadioButton \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/qradiobutton.h \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QStatusBar \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/qstatusbar.h \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QToolBar \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/qtoolbar.h \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QVBoxLayout \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o login_singup.o ..\project\login_singup.cpp

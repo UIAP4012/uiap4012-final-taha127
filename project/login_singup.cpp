@@ -25,6 +25,7 @@ login_singup::login_singup(QWidget *parent) :
         "QPushButton:hover {text-decoration: underline;}"
         "QPushButton{color: rgb(255, 255, 0);}"
         );
+
 }
 
 login_singup::~login_singup()

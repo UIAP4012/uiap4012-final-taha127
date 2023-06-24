@@ -2,6 +2,9 @@
 #define LOGIN_SINGUP_H
 
 #include <QMainWindow>
+#include <QPixmap>
+#include <QIcon>
+#include <QLineEdit>
 
 namespace Ui {
 class login_singup;
