@@ -72,7 +72,7 @@ border-radius : 8px;
         <string> year</string>
        </property>
        <property name="prefix">
-        <string>                                        </string>
+        <string/>
        </property>
        <property name="minimum">
         <number>15</number>
@@ -145,7 +145,7 @@ border-radius : 8px;
 </string>
        </property>
        <property name="text">
-        <string>sing up</string>
+        <string>sign up</string>
        </property>
       </widget>
      </item>
@@ -162,7 +162,12 @@ border-radius : 8px;
     </rect>
    </property>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="styleSheet">
+    <string notr="true">font: 75 11pt &quot;Comic Sans MS&quot;;
+background-color: transparent;</string>
+   </property>
+  </widget>
   <widget class="QToolBar" name="toolBar">
    <property name="windowTitle">
     <string>toolBar</string>
@@ -230,7 +235,7 @@ border-radius : 8px;
     <string notr="true"/>
    </property>
    <property name="toolTip">
-    <string notr="true">                                                                </string>
+    <string notr="true"/>
    </property>
    <property name="font">
     <font>

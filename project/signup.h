@@ -1,6 +1,6 @@
 #ifndef SIGNUP_H
 #define SIGNUP_H
-
+#include "user.h"
 #include <QMainWindow>
 #include <QLabel>
 namespace Ui {
@@ -19,6 +19,10 @@ private slots:
     void on_actionexit_triggered();
 
     void on_actionback_to_log_in_triggered();
+
+    void on_pushButton_clicked();
+
+    bool checkUser(user & person);
 
 private:
     Ui::signup *ui;

@@ -1,4 +1,5 @@
-QT       += core gui
+QT       += core gui \
+    quick
 QT += multimediawidgets
 QT += multimedia
 
@@ -23,13 +24,15 @@ SOURCES += \
     login_singup.cpp \
     main.cpp \
     mainwindow.cpp \
-    signup.cpp
+    signup.cpp \
+    user.cpp
 
 HEADERS += \
     loadapp.h \
     login_singup.h \
     mainwindow.h \
-    signup.h
+    signup.h \
+    user.h
 
 FORMS += \
     loadapp.ui \

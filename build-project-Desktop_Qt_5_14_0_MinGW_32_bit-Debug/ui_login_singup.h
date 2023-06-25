@@ -228,7 +228,7 @@ public:
     {
         login_singup->setWindowTitle(QCoreApplication::translate("login_singup", "MainWindow", nullptr));
         exit->setText(QCoreApplication::translate("login_singup", "exit", nullptr));
-        groupBox->setTitle(QCoreApplication::translate("login_singup", "sing in", nullptr));
+        groupBox->setTitle(QCoreApplication::translate("login_singup", "sign in", nullptr));
         label->setText(QCoreApplication::translate("login_singup", "username : ", nullptr));
         label_2->setText(QCoreApplication::translate("login_singup", "password : ", nullptr));
         radioButton->setText(QCoreApplication::translate("login_singup", "Customer", nullptr));

@@ -60,7 +60,7 @@ border-radius : 8px;
 </string>
      </property>
      <property name="title">
-      <string>sing in</string>
+      <string>sign in</string>
      </property>
      <widget class="QWidget" name="layoutWidget">
       <property name="geometry">

@@ -360,6 +360,8 @@ public:
         signup->setMenuBar(menubar);
         statusbar = new QStatusBar(signup);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
+        statusbar->setStyleSheet(QString::fromUtf8("font: 75 11pt \"Comic Sans MS\";\n"
+"background-color: transparent;"));
         signup->setStatusBar(statusbar);
         toolBar = new QToolBar(signup);
         toolBar->setObjectName(QString::fromUtf8("toolBar"));
@@ -415,7 +417,7 @@ public:
         lineEdit_4->setPlaceholderText(QCoreApplication::translate("signup", "password", nullptr));
         radioButton->setText(QCoreApplication::translate("signup", "Customer", nullptr));
         radioButton_2->setText(QCoreApplication::translate("signup", "Seller", nullptr));
-        pushButton->setText(QCoreApplication::translate("signup", "sing up", nullptr));
+        pushButton->setText(QCoreApplication::translate("signup", "sign up", nullptr));
         toolBar->setWindowTitle(QCoreApplication::translate("signup", "toolBar", nullptr));
     } // retranslateUi
 
