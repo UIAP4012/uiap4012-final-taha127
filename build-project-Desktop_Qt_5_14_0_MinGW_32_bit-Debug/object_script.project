@@ -2,6 +2,7 @@ loadapp.o
 login_singup.o
 main.o
 mainwindow.o
+product.o
 seller_page.o
 signup.o
 user.o

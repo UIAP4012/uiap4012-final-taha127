@@ -9,7 +9,6 @@ seller_page::seller_page(QPair<size_t, user>& person, QWidget *parent) :
     this->person = person;
     setWindowFlags(Qt::FramelessWindowHint);
     ui->menubar->hide();
-    //ui->statusbar->close();
     connect(ui->actionmaxsize, &QAction::triggered, [this]() {
         setWindowState(Qt::WindowMaximized);
     });
@@ -46,8 +45,18 @@ seller_page::seller_page(QPair<size_t, user>& person, QWidget *parent) :
         "QPushButton {font: 14pt MS Reference Sans Serif;}"
         "QPushButton {color: rgb(255, 255, 127);}"
         );
-    ui->label_3->setText(person.second.name);
+    ui->pushButton_6->setStyleSheet(
+        "QPushButton:hover {background-color: #61df00}"
+        "QPushButton {background-color: rgb(0, 180, 87);}"
+        "QPushButton {border-radius: 5px;}"
+        "QPushButton {font: 75 11pt Microsoft JhengHei;}"
+        "QPushButton {color: rgb(255, 255, 0);}"
+        );
 
+
+
+    ui->label_3->setText(person.second.name);
+    ui->stackedWidget->setCurrentIndex(0);
 }
 seller_page::~seller_page()
 {
@@ -59,8 +68,34 @@ void seller_page::on_actionexit_triggered()
     close();
 }
 
-
-/*void seller_page::on_pushButton_clicked()
+void seller_page::on_pushButton_clicked()
 {
     ui->stackedWidget->setCurrentIndex(1);
-}*/
+}
+
+bool seller_page::checkProduct(product & pr){
+    if(pr.name.trimmed().isEmpty()){
+        ui->statusbar->showMessage("The name field cannot be empty.", 8000);
+        return false;
+    }
+    if(pr.price == 0){
+        ui->statusbar->showMessage("Enter the price correctly.", 8000);
+        return false;
+    }
+    return true;
+}
+
+void seller_page::on_pushButton_6_clicked()
+{
+    product pr;
+    QUuid id = QUuid::createUuid();
+    pr.id = id.toString();
+    pr.name = ui->lineEdit_2->text();
+    pr.price = ui->lineEdit->text().toInt();
+    pr.number = ui->spinBox->value();
+    pr.description = ui->textEdit->toPlainText();
+    pr.user_name_seller = person.second.user_name;
+    if(!checkProduct(pr))
+        return;
+    pr.addToFile();
+}

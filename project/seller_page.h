@@ -4,7 +4,9 @@
 #include <QMainWindow>
 #include "user.h"
 #include "login_singup.h"
+#include "product.h"
 #include <QPair>
+#include <QUuid>
 
 namespace Ui {
 class seller_page;
@@ -21,7 +23,11 @@ public:
 private slots:
     void on_actionexit_triggered();
 
-    //void on_pushButton_clicked();
+    bool checkProduct(product &);
+
+    void on_pushButton_clicked();
+
+    void on_pushButton_6_clicked();
 
 private:
     Ui::seller_page *ui;

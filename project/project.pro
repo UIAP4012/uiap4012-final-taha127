@@ -24,6 +24,7 @@ SOURCES += \
     login_singup.cpp \
     main.cpp \
     mainwindow.cpp \
+    product.cpp \
     seller_page.cpp \
     signup.cpp \
     user.cpp
@@ -32,6 +33,7 @@ HEADERS += \
     loadapp.h \
     login_singup.h \
     mainwindow.h \
+    product.h \
     seller_page.h \
     signup.h \
     user.h

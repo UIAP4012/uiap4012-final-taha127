@@ -15,15 +15,20 @@
 #include <QtWidgets/QFormLayout>
 #include <QtWidgets/QFrame>
 #include <QtWidgets/QGridLayout>
+#include <QtWidgets/QGroupBox>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QSpinBox>
 #include <QtWidgets/QStackedWidget>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QToolBar>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -55,6 +60,14 @@ public:
     QSpacerItem *horizontalSpacer_3;
     QLabel *label;
     QWidget *page_2;
+    QVBoxLayout *verticalLayout;
+    QGroupBox *groupBox;
+    QVBoxLayout *verticalLayout_2;
+    QLineEdit *lineEdit_2;
+    QLineEdit *lineEdit;
+    QSpinBox *spinBox;
+    QTextEdit *textEdit;
+    QPushButton *pushButton_6;
     QMenuBar *menubar;
     QStatusBar *statusbar;
     QToolBar *toolBar;
@@ -100,6 +113,7 @@ public:
         formLayout->setContentsMargins(3, 18, 8, 27);
         pushButton = new QPushButton(frame);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setCursor(QCursor(Qt::PointingHandCursor));
         pushButton->setStyleSheet(QString::fromUtf8("background-color: transparent;\n"
 "font: 14pt \"MS Reference Sans Serif\";\n"
 "color: rgb(255, 255, 127);\n"
@@ -109,6 +123,7 @@ public:
 
         pushButton_3 = new QPushButton(frame);
         pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
+        pushButton_3->setCursor(QCursor(Qt::PointingHandCursor));
         pushButton_3->setStyleSheet(QString::fromUtf8("background-color: transparent;\n"
 "font: 14pt \"MS Reference Sans Serif\";\n"
 "color: rgb(255, 255, 127);"));
@@ -117,6 +132,7 @@ public:
 
         pushButton_2 = new QPushButton(frame);
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        pushButton_2->setCursor(QCursor(Qt::PointingHandCursor));
         pushButton_2->setStyleSheet(QString::fromUtf8("background-color: transparent;\n"
 "font: 14pt \"MS Reference Sans Serif\";\n"
 "color: rgb(255, 255, 127);"));
@@ -125,6 +141,7 @@ public:
 
         pushButton_4 = new QPushButton(frame);
         pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
+        pushButton_4->setCursor(QCursor(Qt::PointingHandCursor));
         pushButton_4->setStyleSheet(QString::fromUtf8("background-color: transparent;\n"
 "font: 14pt \"MS Reference Sans Serif\";\n"
 "color: rgb(255, 255, 127);"));
@@ -133,6 +150,7 @@ public:
 
         pushButton_5 = new QPushButton(frame);
         pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
+        pushButton_5->setCursor(QCursor(Qt::PointingHandCursor));
         pushButton_5->setStyleSheet(QString::fromUtf8("background-color: transparent;\n"
 "font: 14pt \"MS Reference Sans Serif\";\n"
 "color: rgb(255, 255, 127);"));
@@ -197,6 +215,67 @@ public:
         stackedWidget->addWidget(page);
         page_2 = new QWidget();
         page_2->setObjectName(QString::fromUtf8("page_2"));
+        verticalLayout = new QVBoxLayout(page_2);
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        verticalLayout->setContentsMargins(164, 26, 164, 26);
+        groupBox = new QGroupBox(page_2);
+        groupBox->setObjectName(QString::fromUtf8("groupBox"));
+        groupBox->setStyleSheet(QString::fromUtf8("background-color: transparent;\n"
+"font: 75 11pt \"Microsoft JhengHei\";\n"
+"color: rgb(170, 0, 0);\n"
+""));
+        verticalLayout_2 = new QVBoxLayout(groupBox);
+        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        lineEdit_2 = new QLineEdit(groupBox);
+        lineEdit_2->setObjectName(QString::fromUtf8("lineEdit_2"));
+        lineEdit_2->setStyleSheet(QString::fromUtf8("background-color: rgb(78, 88, 147);\n"
+"color: rgb(255, 255, 0);\n"
+"border-radius: 5px;"));
+
+        verticalLayout_2->addWidget(lineEdit_2);
+
+        lineEdit = new QLineEdit(groupBox);
+        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
+        lineEdit->setStyleSheet(QString::fromUtf8("background-color: rgb(78, 88, 147);\n"
+"color: rgb(255, 255, 0);\n"
+"border-radius: 5px;"));
+
+        verticalLayout_2->addWidget(lineEdit);
+
+        spinBox = new QSpinBox(groupBox);
+        spinBox->setObjectName(QString::fromUtf8("spinBox"));
+        spinBox->setCursor(QCursor(Qt::PointingHandCursor));
+        spinBox->setStyleSheet(QString::fromUtf8("background-color: rgb(78, 88, 147);\n"
+"color: rgb(255, 255, 0);\n"
+""));
+        spinBox->setMinimum(1);
+
+        verticalLayout_2->addWidget(spinBox);
+
+        textEdit = new QTextEdit(groupBox);
+        textEdit->setObjectName(QString::fromUtf8("textEdit"));
+        textEdit->viewport()->setProperty("cursor", QVariant(QCursor(Qt::IBeamCursor)));
+        textEdit->setAutoFillBackground(false);
+        textEdit->setStyleSheet(QString::fromUtf8("background-color: rgb(78, 88, 147);\n"
+"color: rgb(255, 255, 0);\n"
+"border-radius: 5px;"));
+        textEdit->setFrameShape(QFrame::Box);
+        textEdit->setFrameShadow(QFrame::Plain);
+        textEdit->setLineWidth(1);
+
+        verticalLayout_2->addWidget(textEdit);
+
+        pushButton_6 = new QPushButton(groupBox);
+        pushButton_6->setObjectName(QString::fromUtf8("pushButton_6"));
+        pushButton_6->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 0);\n"
+"background-color: rgb(0, 180, 87);\n"
+"border-radius: 5px;"));
+
+        verticalLayout_2->addWidget(pushButton_6);
+
+
+        verticalLayout->addWidget(groupBox);
+
         stackedWidget->addWidget(page_2);
 
         horizontalLayout->addWidget(stackedWidget);
@@ -210,7 +289,10 @@ public:
         seller_page->setMenuBar(menubar);
         statusbar = new QStatusBar(seller_page);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
-        statusbar->setStyleSheet(QString::fromUtf8("background-color: rgb(89, 139, 120);"));
+        statusbar->setCursor(QCursor(Qt::ArrowCursor));
+        statusbar->setStyleSheet(QString::fromUtf8("background-color: rgb(89, 139, 120);\n"
+"color: rgb(255, 0, 0);\n"
+"font: 75 11pt \"MS Shell Dlg 2\";"));
         seller_page->setStatusBar(statusbar);
         toolBar = new QToolBar(seller_page);
         toolBar->setObjectName(QString::fromUtf8("toolBar"));
@@ -226,7 +308,7 @@ public:
 
         retranslateUi(seller_page);
 
-        stackedWidget->setCurrentIndex(0);
+        stackedWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(seller_page);
@@ -243,9 +325,16 @@ public:
         pushButton_2->setText(QCoreApplication::translate("seller_page", "Edit information", nullptr));
         pushButton_4->setText(QCoreApplication::translate("seller_page", "Show my products", nullptr));
         pushButton_5->setText(QCoreApplication::translate("seller_page", "sign out", nullptr));
-        label_2->setText(QCoreApplication::translate("seller_page", "hi", nullptr));
+        label_2->setText(QCoreApplication::translate("seller_page", "hi ! ", nullptr));
         label_3->setText(QCoreApplication::translate("seller_page", "TextLabel", nullptr));
         label->setText(QString());
+        groupBox->setTitle(QCoreApplication::translate("seller_page", "Product Information", nullptr));
+        lineEdit_2->setPlaceholderText(QCoreApplication::translate("seller_page", "name, model", nullptr));
+        lineEdit->setPlaceholderText(QCoreApplication::translate("seller_page", "price", nullptr));
+        spinBox->setSuffix(QCoreApplication::translate("seller_page", " numbers", nullptr));
+        spinBox->setPrefix(QString());
+        textEdit->setPlaceholderText(QCoreApplication::translate("seller_page", "Description :", nullptr));
+        pushButton_6->setText(QCoreApplication::translate("seller_page", "Add", nullptr));
         toolBar->setWindowTitle(QCoreApplication::translate("seller_page", "toolBar", nullptr));
     } // retranslateUi
 
