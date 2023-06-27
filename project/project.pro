@@ -24,6 +24,7 @@ SOURCES += \
     login_singup.cpp \
     main.cpp \
     mainwindow.cpp \
+    seller_page.cpp \
     signup.cpp \
     user.cpp
 
@@ -31,6 +32,7 @@ HEADERS += \
     loadapp.h \
     login_singup.h \
     mainwindow.h \
+    seller_page.h \
     signup.h \
     user.h
 
@@ -38,6 +40,7 @@ FORMS += \
     loadapp.ui \
     login_singup.ui \
     mainwindow.ui \
+    seller_page.ui \
     signup.ui
 
 # Default rules for deployment.

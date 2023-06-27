@@ -205,7 +205,8 @@ public:
         login_singup->setMenuBar(menubar);
         statusBar = new QStatusBar(login_singup);
         statusBar->setObjectName(QString::fromUtf8("statusBar"));
-        statusBar->setStyleSheet(QString::fromUtf8("background-color: transparent;\n"
+        statusBar->setStyleSheet(QString::fromUtf8("background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.539, y2:0, stop:0.146067 rgba(177, 52, 94, 255), stop:1 rgba(255, 0, 0, 255));\n"
+"font: 12pt \"MS Shell Dlg 2\";\n"
 ""));
         login_singup->setStatusBar(statusBar);
         toolBar = new QToolBar(login_singup);

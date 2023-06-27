@@ -1,15 +1,14 @@
 #include "login_singup.h"
 #include "ui_login_singup.h"
-#include "signup.h"
+
 
 login_singup::login_singup(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::login_singup)
 {
     ui->setupUi(this);
-    //ui->centralwidget->setFixedSize(350, 350);
-    ui->statusBar->hide();
     ui->menubar->hide();
+    ui->statusBar->setSizeGripEnabled(false);
     setWindowFlags(Qt::FramelessWindowHint);
     ui->menubar->setStyleSheet("border-radius: 10px");
     ui->pushButton_2->setStyleSheet(
@@ -43,5 +42,61 @@ void login_singup::on_pushButton_clicked()
 {
     close();
     signup * next = new signup();
+    next->show();
+}
+
+bool login_singup::find_user(QString& user_name, QString& password, QString& type, QPair<size_t, user> &person){
+    QFile file("users.csv");
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
+        return false;
+    QTextStream in(&file);
+    size_t num_line = 0;
+    while (!in.atEnd()) {
+        num_line++;
+        QString line = in.readLine();
+        QStringList list = line.split(",");
+        if(list[0] == user_name && list[1] == password && list[5] == type){
+            person.first = num_line;
+            person.second.user_name = user_name;
+            person.second.password = password;
+            person.second.name = list[2];
+            person.second.family = list[3];
+            person.second.age = list[4];
+            person.second.type = type;
+            return true;
+        }
+    }
+    file.close();
+    return false;
+}
+
+void login_singup::on_pushButton_2_clicked()
+{
+    QPair<size_t, user> person;
+    QString type, user_name = ui->lineEdit->text(), password = ui->lineEdit_2->text();
+    if(user_name.trimmed().isEmpty()){
+        ui->statusBar->showMessage("Enter the username", 8000);
+        return;
+    }
+    if(password.trimmed().isEmpty()){
+        ui->statusBar->showMessage("Enter the password", 8000);
+        return;
+    }
+    if(ui->radioButton->isChecked()){
+        type = "customer";
+    }
+    else if(ui->radioButton_2->isChecked()){
+        type = "seller";
+    }
+    else{
+        ui->statusBar->showMessage("Please specify the type of user", 8000);
+        return;
+    }
+    if(!find_user(user_name, password, type, person)){
+        ui->statusBar->showMessage("The information entered is incorrect", 8000);
+        return;
+    }
+    seller_page * next = new seller_page(person);
+    close();
     next->show();
 }

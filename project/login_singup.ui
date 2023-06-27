@@ -265,7 +265,8 @@ background-color: transparent;
   </widget>
   <widget class="QStatusBar" name="statusBar">
    <property name="styleSheet">
-    <string notr="true">background-color: transparent;
+    <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0.539, y2:0, stop:0.146067 rgba(177, 52, 94, 255), stop:1 rgba(255, 0, 0, 255));
+font: 12pt &quot;MS Shell Dlg 2&quot;;
 </string>
    </property>
   </widget>

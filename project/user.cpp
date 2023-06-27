@@ -1,5 +1,5 @@
 #include "user.h"
-#include <QDebug>
+
 void user::addToFile(){
     file = new QFile("users.csv");
     if(!file->open(QIODevice::ReadWrite | QIODevice::Text)){
@@ -8,12 +8,12 @@ void user::addToFile(){
 
     QTextStream stream(file);
     QString contents = stream.readAll();
-    contents += user_name + "," + password + "," + name + "," + family + "," + QString::number(age) + "," + type + "\n";
+    contents += user_name + "," + password + "," + name + "," + family + "," + age + "," + type + "\n";
     file->resize(0);
     stream << contents;
     file->close();
 }
-bool user::checkUserName(){
+bool user::searchByUserName(){
     QFile file("users.csv");
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
         return false;
@@ -25,6 +25,6 @@ bool user::checkUserName(){
             return true;
         }
     }
+    file.close();
     return false;
-
 }

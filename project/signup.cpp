@@ -1,13 +1,11 @@
 #include "signup.h"
 #include "ui_signup.h"
 #include "login_singup.h"
-#include <QDebug>
 signup::signup(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::signup)
 {
     ui->setupUi(this);
-    //ui->statusbar->hide();
     ui->centralwidget->setFixedSize(514, 383);
     ui->statusbar->setSizeGripEnabled(false);
     ui->menubar->hide();
@@ -48,7 +46,7 @@ bool signup::checkUser(user & person){
         ui->statusbar->showMessage("Please specify the type of user", 8000);
         return false;
     }
-    if(person.checkUserName()){
+    if(person.searchByUserName()){
         ui->statusbar->showMessage("The username entered is already used. Please enter another username", 8000);
         return false;
     }
@@ -60,7 +58,7 @@ void signup::on_pushButton_clicked()
     user person;
     person.name = ui->lineEdit->text();
     person.family = ui->lineEdit_2->text();
-    person.age = ui->spinBox->value();
+    person.age = QString::number(ui->spinBox->value());
     person.user_name = ui->lineEdit_3->text();
     person.password = ui->lineEdit_4->text();
     if(ui->radioButton->isChecked()){

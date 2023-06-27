@@ -2,10 +2,12 @@ loadapp.o
 login_singup.o
 main.o
 mainwindow.o
+seller_page.o
 signup.o
 user.o
 qrc_resources.o
 moc_loadapp.o
 moc_login_singup.o
 moc_mainwindow.o
+moc_seller_page.o
 moc_signup.o
