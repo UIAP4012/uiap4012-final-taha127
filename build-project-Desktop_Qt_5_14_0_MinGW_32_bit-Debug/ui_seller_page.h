@@ -68,6 +68,7 @@ public:
     QSpinBox *spinBox;
     QTextEdit *textEdit;
     QPushButton *pushButton_6;
+    QWidget *page_3;
     QMenuBar *menubar;
     QStatusBar *statusbar;
     QToolBar *toolBar;
@@ -277,6 +278,9 @@ public:
         verticalLayout->addWidget(groupBox);
 
         stackedWidget->addWidget(page_2);
+        page_3 = new QWidget();
+        page_3->setObjectName(QString::fromUtf8("page_3"));
+        stackedWidget->addWidget(page_3);
 
         horizontalLayout->addWidget(stackedWidget);
 
@@ -308,7 +312,7 @@ public:
 
         retranslateUi(seller_page);
 
-        stackedWidget->setCurrentIndex(1);
+        stackedWidget->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(seller_page);

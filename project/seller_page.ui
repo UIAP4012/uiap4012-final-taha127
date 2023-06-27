@@ -174,7 +174,7 @@ color: rgb(255, 255, 127);</string>
        <string notr="true">background-color: rgb(170, 255, 255);</string>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="page">
        <layout class="QGridLayout" name="gridLayout" rowstretch="1,3" rowminimumheight="2,3">
@@ -357,6 +357,7 @@ border-radius: 5px;</string>
         </item>
        </layout>
       </widget>
+      <widget class="QWidget" name="page_3"/>
      </widget>
     </item>
    </layout>

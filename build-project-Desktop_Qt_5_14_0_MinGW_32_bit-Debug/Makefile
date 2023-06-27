@@ -519,7 +519,6 @@ compiler_rcc_clean:
 qrc_resources.cpp: ../project/resources.qrc \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/bin/rcc.exe \
 		../project/movie/first.gif \
-		../project/movie/Capture.JPG \
 		../project/image/tool_minimize_hover.png \
 		../project/image/sidebar_mm.png \
 		../project/image/winner.gif \
@@ -846,6 +845,10 @@ moc_login_singup.cpp: ../project/login_singup.h \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/qlabel.h \
 		../project/seller_page.h \
 		../project/login_singup.h \
+		../project/product.h \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QWidget \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtCore/QUuid \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtCore/quuid.h \
 		moc_predefs.h \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/bin/moc.exe
 	D:\Qt\Qt5.14.0\5.14.0\mingw73_32\bin\moc.exe $(DEFINES) --include "C:/Users/ADINEH RAYANEH/Desktop/uiap4012-final-taha127/build-project-Desktop_Qt_5_14_0_MinGW_32_bit-Debug/moc_predefs.h" -ID:/Qt/Qt5.14.0/5.14.0/mingw73_32/mkspecs/win32-g++ -I"C:/Users/ADINEH RAYANEH/Desktop/uiap4012-final-taha127/project" -ID:/Qt/Qt5.14.0/5.14.0/mingw73_32/include -ID:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtQuick -ID:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtMultimediaWidgets -ID:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtMultimedia -ID:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets -ID:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtGui -ID:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtANGLE -ID:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtQmlModels -ID:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtQml -ID:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtNetwork -ID:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtCore -I. -ID:/Qt/Qt5.14.0/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++ -ID:/Qt/Qt5.14.0/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32 -ID:/Qt/Qt5.14.0/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/backward -ID:/Qt/Qt5.14.0/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include -ID:/Qt/Qt5.14.0/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include-fixed -ID:/Qt/Qt5.14.0/Tools/mingw730_32/i686-w64-mingw32/include ..\project\login_singup.h -o moc_login_singup.cpp
@@ -1101,6 +1104,10 @@ moc_seller_page.cpp: ../project/seller_page.h \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QLabel \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/qlabel.h \
 		../project/seller_page.h \
+		../project/product.h \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QWidget \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtCore/QUuid \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtCore/quuid.h \
 		moc_predefs.h \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/bin/moc.exe
 	D:\Qt\Qt5.14.0\5.14.0\mingw73_32\bin\moc.exe $(DEFINES) --include "C:/Users/ADINEH RAYANEH/Desktop/uiap4012-final-taha127/build-project-Desktop_Qt_5_14_0_MinGW_32_bit-Debug/moc_predefs.h" -ID:/Qt/Qt5.14.0/5.14.0/mingw73_32/mkspecs/win32-g++ -I"C:/Users/ADINEH RAYANEH/Desktop/uiap4012-final-taha127/project" -ID:/Qt/Qt5.14.0/5.14.0/mingw73_32/include -ID:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtQuick -ID:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtMultimediaWidgets -ID:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtMultimedia -ID:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets -ID:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtGui -ID:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtANGLE -ID:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtQmlModels -ID:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtQml -ID:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtNetwork -ID:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtCore -I. -ID:/Qt/Qt5.14.0/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++ -ID:/Qt/Qt5.14.0/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32 -ID:/Qt/Qt5.14.0/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/backward -ID:/Qt/Qt5.14.0/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include -ID:/Qt/Qt5.14.0/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include-fixed -ID:/Qt/Qt5.14.0/Tools/mingw730_32/i686-w64-mingw32/include ..\project\seller_page.h -o moc_seller_page.cpp
@@ -1464,7 +1471,11 @@ loadapp.o: ../project/loadapp.cpp ../project/loadapp.h \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QMessageBox \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/qmessagebox.h \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtCore/QTextStream \
-		../project/seller_page.h
+		../project/seller_page.h \
+		../project/product.h \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QWidget \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtCore/QUuid \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtCore/quuid.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o loadapp.o ..\project\loadapp.cpp
 
 login_singup.o: ../project/login_singup.cpp ../project/login_singup.h \
@@ -1605,6 +1616,10 @@ login_singup.o: ../project/login_singup.cpp ../project/login_singup.h \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QLabel \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/qlabel.h \
 		../project/seller_page.h \
+		../project/product.h \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QWidget \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtCore/QUuid \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtCore/quuid.h \
 		ui_login_singup.h \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtCore/QVariant \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QAction \
@@ -1630,8 +1645,7 @@ login_singup.o: ../project/login_singup.cpp ../project/login_singup.h \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/qstatusbar.h \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QToolBar \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/qtoolbar.h \
-		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QVBoxLayout \
-		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QWidget
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QVBoxLayout
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o login_singup.o ..\project\login_singup.cpp
 
 main.o: ../project/main.cpp ../project/loadapp.h \
@@ -2034,7 +2048,9 @@ product.o: ../project/product.cpp ../project/product.h \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtGui/qtouchdevice.h \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtCore/QString \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtCore/QUuid \
-		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtCore/quuid.h
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtCore/quuid.h \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtCore/QFile \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtCore/QTextStream
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o product.o ..\project\product.cpp
 
 seller_page.o: ../project/seller_page.cpp ../project/seller_page.h \
@@ -2175,6 +2191,10 @@ seller_page.o: ../project/seller_page.cpp ../project/seller_page.h \
 		../project/signup.h \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QLabel \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/qlabel.h \
+		../project/product.h \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QWidget \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtCore/QUuid \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtCore/quuid.h \
 		ui_seller_page.h \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtCore/QVariant \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QAction \
@@ -2189,6 +2209,8 @@ seller_page.o: ../project/seller_page.cpp ../project/seller_page.h \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/qgridlayout.h \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QFrame \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QGridLayout \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QGroupBox \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/qgroupbox.h \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QHBoxLayout \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QMenuBar \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/qmenubar.h \
@@ -2197,13 +2219,22 @@ seller_page.o: ../project/seller_page.cpp ../project/seller_page.h \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/qpushbutton.h \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/qabstractbutton.h \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QSpacerItem \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QSpinBox \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/qspinbox.h \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/qabstractspinbox.h \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtGui/qvalidator.h \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtCore/qregularexpression.h \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QStackedWidget \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/qstackedwidget.h \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QStatusBar \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/qstatusbar.h \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QTextEdit \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/qtextedit.h \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/qabstractscrollarea.h \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtGui/qtextdocument.h \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QToolBar \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/qtoolbar.h \
-		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QWidget
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtWidgets/QVBoxLayout
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o seller_page.o ..\project\seller_page.cpp
 
 signup.o: ../project/signup.cpp ../project/signup.h \
@@ -2373,7 +2404,10 @@ signup.o: ../project/signup.cpp ../project/signup.h \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtGui/QPixmap \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtGui/QIcon \
 		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtCore/QPair \
-		../project/seller_page.h
+		../project/seller_page.h \
+		../project/product.h \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtCore/QUuid \
+		D:/Qt/Qt5.14.0/5.14.0/mingw73_32/include/QtCore/quuid.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o signup.o ..\project\signup.cpp
 
 user.o: ../project/user.cpp ../project/user.h \
