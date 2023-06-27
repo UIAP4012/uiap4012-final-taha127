@@ -9,6 +9,7 @@
 #include "signup.h"
 #include "user.h"
 #include "seller_page.h"
+#include "customer_page.h"
 
 namespace Ui {
 class login_singup;

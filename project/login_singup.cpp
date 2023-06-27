@@ -96,7 +96,13 @@ void login_singup::on_pushButton_2_clicked()
         ui->statusBar->showMessage("The information entered is incorrect", 8000);
         return;
     }
-    seller_page * next = new seller_page(person);
     close();
-    next->show();
+    if(person.second.type == "seller"){
+        seller_page * next = new seller_page(person);
+        next->show();
+    }
+    else{
+        customer_page * next = new customer_page(person);
+        next->show();
+    }
 }
