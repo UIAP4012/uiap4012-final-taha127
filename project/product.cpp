@@ -8,7 +8,7 @@ void product::addToFile(){
 
     QTextStream stream(file);
     QString contents = stream.readAll();
-    contents += id + "," + user_name_seller + "," + name + "," + price + "," + number + "," + description + "\n";
+    contents += id + "," + user_name_seller + "," + name + "," + QString::number(price) + "," + QString::number(number) + "," + description + "\n";
     file->resize(0);
     stream << contents;
     file->close();
